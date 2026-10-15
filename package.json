@@ -1,0 +1,21 @@
+{
+  "name": "labpilot",
+  "version": "1.4.0",
+  "private": true,
+  "description": "Multi-tenant hands-on cloud labs platform: UI, REST API, SQLite, job worker and tests in one deployable page.",
+  "author": "Shovan Dutta",
+  "license": "MIT",
+  "scripts": {
+    "build": "python3 build.py",
+    "test": "node test/node.test.js",
+    "e2e": "node test/e2e.test.js",
+    "test:csp": "node test/csp.test.js"
+  },
+  "devDependencies": {
+    "playwright": "1.47.2",
+    "sql.js": "1.10.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
