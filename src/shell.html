@@ -1,0 +1,32 @@
+<div class="app" id="app">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#" data-act="home">%%LOGO%%<span>LabPilot</span></a>
+      <div class="worker-status" id="worker-status" title="Background job worker"><span class="dot"></span><span class="ws-label">Worker</span><span class="ws-val">starting</span></div>
+      <div class="topbar-right" id="topbar-right"></div>
+    </div>
+  </header>
+  <div class="frame">
+    <nav class="rail" id="rail" aria-label="Main"></nav>
+    <main class="main" id="main" tabindex="-1">
+      <div class="panel boot">
+        <div class="panel-body">
+          <div class="eyebrow">Starting LabPilot</div>
+          <h1>Booting the full stack in your browser</h1>
+          <ol class="boot-steps">
+            <li class="boot-step" data-boot="engine">Loading the SQLite engine<span class="boot-detail">sql.js 1.10.3 from cdnjs, about 1.3 MB</span></li>
+            <li class="boot-step" data-boot="db">Opening the database<span class="boot-detail">Restores your saved copy if there is one</span></li>
+            <li class="boot-step" data-boot="migrate">Applying migrations<span class="boot-detail">Five numbered schema migrations</span></li>
+            <li class="boot-step" data-boot="seed">Seeding demo organizations<span class="boot-detail">Only on the first visit</span></li>
+            <li class="boot-step" data-boot="api">Starting the API and job worker<span class="boot-detail">Routes, middleware and a 300 ms polling worker</span></li>
+          </ol>
+        </div>
+      </div>
+    </main>
+  </div>
+  <section class="net" id="net" aria-label="Network activity">
+    <div class="net-bar" id="net-bar"></div>
+    <div class="net-body" id="net-body" hidden></div>
+  </section>
+  <div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+</div>
